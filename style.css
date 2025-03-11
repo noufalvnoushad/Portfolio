@@ -271,7 +271,7 @@ color: white;
 }
 .project-card img
 {
-    width: 20vw;
+    width: 15vw;
     border-radius: 1rem;
 }
 .project-card:hover .btn

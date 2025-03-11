@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "fDm97gobwFbUxxsO6",
+      });
+   })();
+</script>
 </head>
 <body>
     <!--====================HEADER=======================-->
@@ -25,6 +37,11 @@
                 </a>
             </li>
             <li>
+                <a href="#resume">Resume
+                </a>
+            </li>
+
+            <li>
                 <a href="#images">Images
                 </a>
             </li>
@@ -35,7 +52,7 @@
             
         </ul>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <button class="visit-btn">Visit GitHub</button>
+        <button class="visit-btn">Student</button>
     </header>
     <!--====================ABOUT SECTION=======================-->
     <section id="about" class="about">
@@ -45,15 +62,21 @@
                 <div class="text">
                     <h3>Hi, I'm</h3>
                     <h1>Noufal V N</h1>
-                    <span>Customer Care Executive</span>
+                    <span>Student(MEAN Stack)</span>
                 </div>
                 <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <div class="btn">Contact</div>
+                    <div class="btn">
+                        <a href="#resume">Download CV</a></div>
+                    <div class="btn">
+                        <a href="#contact">Contact</a></div>
+                       
                 </div>
                 <div class="socials">
-                    <i class="fa-brands fa-github"></i> 
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/noufalvnoushad">
+                    <i class="fa-brands fa-github"></a></i> 
+                    <a href="https://www.linkedin.com/in/noufal-noushad-251002356/">
+                    <i class="fa-brands fa-linkedin"></a></i>
+                    
                 </div>
             </div>
         </div>
@@ -66,13 +89,17 @@
                 <div class="grid-card">
                     <i class="fa-solid fa-suitcase"></i>
                     <span>Customer Care Executive</span>
+                    <br>
                     <h3>12 Years</h3>
+                    <br>
                     <p>Customer Care Executive at Van Heusen Factory Outlet, Kottayam, Kerala</p>
                 </div>
                 <div class="grid-card">
                     <i class="fa-solid fa-people-roof"></i>
                     <span>Store Manager</span>
+                    <br>
                     <h3>1 Years</h3>
+                    <br>
                     <p>Store Manager at US Polo ASSN. and Flying Machine</p>
                 </div>
                 <div class="grid-card">
@@ -80,6 +107,7 @@
                     <span>Store Manager</span>
                     <br>
                     <h3>1 Years</h3>
+                    <br>
                     <p>Najmath Abu Shaghara Super Market L.L.C,Abu Shaghara, Sharjah, U A E</p>
                 </div>
                 <div class="grid-card">
@@ -106,22 +134,83 @@
                 <h3>Project 1</h3>
                 <p>This is my First ever project. It's a Clone of Youtube!</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">GitHub Link</div>
+                    <div class="btn">
+                        <a href="https://noufalvnoushad.github.io/YouTube-Clone/">
+                        Live Demo
+                    </a>
+                    </div>
+                    
                 </div>
             </div>
             <div class="project-card">
                 <img src="images/project2.png" alt="projecttwo">
-                <h3>Project 1</h3>
+                <h3>Project 2</h3>
                 <p>This is my second Project.It's a Philip Van Heusen Website Clone!</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">GitHub Link</div>
-                </div>
+                    <div class="btn">
+                        <a href="https://noufalvnoushad.github.io/PVH-Clone/">
+                            Live Demo</a></div>
+                    
+                        </div>
             </div>   
         </div>
     </section>
+<!--==========================Resume  Section==========================-->
+<section id="resume" class="projects">
+    <h2 class="section-title">
+        Resume
+    </h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="images/CV.png" alt="projectone">
+            <h3>Noufal V N</h3>
+            <p>This is my recent Resume</p>
+            <div class="btn-group">
+                <div class="btn">
+                    <a href="/images/CV.png">
+                        PDFLink
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+           
+    </div>
+</section>
+    
 <!--==========================Image  Section==========================-->
+<section id="images" class="projects">
+    <h2 class="section-title">
+        Some of my Images
+    </h2>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <img src="images/image1.jpg" alt="visit Munnar">
+            <img src="images/image3.jpg" alt="visit Munnar">
+           
+            <h3>Visited Munnar Recently</h3>
+             <div class="btn-group">
+                <div class="btn" id="btn-mnr">
+                        <a href="https://www.google.com/search?q=munnar+tourism&oq=munnar+tourism&=UTF-8">
+                        Go to Munnar</a></div>
+                </div>
+        </div>
+        <div class="project-card">
+            <img src="images/image4.jpg" alt="visit Valpparai">
+            <img src="images/image2.jpg" alt="visit Valpparai">
+            <h3>Visited Valpparai Recently</h3>
+             <div class="btn-group">
+                <div class="btn" id="btn-vlp">
+                    <a href="https://www.google.com/search?q=valparai+tourism&">
+                    Go to Valpparai</a></div>
+            </div>
+        </div>   
+    </div>
+</section>
+
+
+
 <!--
 <section id="image" class="image">
     <h2 class="section-title">Some Images</h2>
@@ -145,6 +234,7 @@
 </section>
 -->
 <!--==========================Contact  Section==========================-->
+<!--
     <section class="contact" id="contact">
         <div class="input-box">
             <h2 class="section-title">
@@ -157,6 +247,52 @@
             <div class="btn">Submit</div>
         </div>
     </section>
+-->
+<!--=================================Form Section===========================-->
+<section class="contact" id="contact">
+    <div class="input-box">
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+    </div>
+<div class="container">
+    <form>
+      <i class="fas fa-paper-plane"></i>
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+        
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="example@email.com" id="contact-mail" onkeyup="validateMail()">
+        <span id="mail-error"></span>
+        
+      </div>   
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+        <span id="message-error"></span>
+        
+      </div>
+
+    <button onclick="return validateForm()">Submit</button>
+    <span id="submit-error"></span>
+   
+  </form>
+  </div>
+</section>
+
+
     <!--==========================Footer  Section==========================-->
     
 
@@ -178,5 +314,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>
